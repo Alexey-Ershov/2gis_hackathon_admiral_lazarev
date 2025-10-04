@@ -5,4 +5,4 @@ venv
 *.pyc
 src/__pycache__
 src/routers/__pycache__
-
+txt
