@@ -1,6 +1,6 @@
 POSTGRES_USER = "postgres"
 POSTGRES_PASSWORD = "12345"
-POSTGRES_DB = "tester"
+POSTGRES_DB = "2gis_hack"
 POSTGRES_HOST = "localhost"
 POSTGRES_PORT = 5432
 
