@@ -18,13 +18,14 @@ uvicorn main:app --reload
 sudo kill $(ps axu | grep uvicorn | awk '{print $2}')
 
 # curl GET
-curl "http://127.0.0.1:8000/items/<ID>"
+curl "http://158.160.1.104:8000/items/"
+curl "http://158.160.1.104:8000/items/<ID>"
 ```
 
 ## Docs
 ### Swagger UI
-http://127.0.0.1:8000/docs
+http://158.160.1.104/docs
 
 ### ReDoc
-http://127.0.0.1:8000/redoc
+http://158.160.1.104/redoc
 
