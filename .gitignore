@@ -1,0 +1,8 @@
+venv
+.idea
+.DS_Store
+2gis_data
+*.pyc
+src/__pycache__
+src/routers/__pycache__
+
