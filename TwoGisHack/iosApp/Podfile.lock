@@ -1,0 +1,23 @@
+PODS:
+  - composeApp (1.0):
+    - MapGL
+  - MapGL (0.1.18)
+
+DEPENDENCIES:
+  - composeApp (from `../composeApp`)
+
+SPEC REPOS:
+  trunk:
+    - MapGL
+
+EXTERNAL SOURCES:
+  composeApp:
+    :path: "../composeApp"
+
+SPEC CHECKSUMS:
+  composeApp: 160a3ec0072423a168896c6095967da3b1d8ab21
+  MapGL: b2e08d3946d7c73bbc6e10fb524b380c0b63c109
+
+PODFILE CHECKSUM: 694e5742421beb220e0c63f0a37a50c198e08dfa
+
+COCOAPODS: 1.16.2

@@ -1,0 +1,3 @@
+package com.larkes.neurobuildermultiplatform.di
+
+actual class PlatformConfiguration

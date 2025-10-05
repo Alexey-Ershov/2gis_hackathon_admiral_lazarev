@@ -1,0 +1,6 @@
+framework module MapGL {
+  umbrella header "MapGL-umbrella.h"
+
+  export *
+  module * { export * }
+}
