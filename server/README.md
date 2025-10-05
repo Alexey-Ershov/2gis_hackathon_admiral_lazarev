@@ -13,8 +13,8 @@ pip install -r requirements.txt
 ```
 
 ## Database
-createdb 2gis_hack
-psql -U postgres -d 2gis_hack -f 2gis_hack.sql
+sudo -u postgres createdb 2gis_hack
+sudo -u postgres psql -U postgres -d 2gis_hack -f 2gis_hack.sql
 
 ## Run server
 uvicorn main:app --reload
