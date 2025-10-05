@@ -1,4 +1,4 @@
-d# AdmiralLazarev Team
+# AdmiralLazarev Team
 
 ## Hackathon Backend (FastAPI + PostgreSQL)
 
