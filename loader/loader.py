@@ -1,7 +1,11 @@
 import requests
 import json
+import sys
 
 url = "https://gigachat.devices.sberbank.ru/api/v1/chat/completions"
+
+builder = "застройщик " + sys.argv[1] + " достоинства"
+print(f"{builder}")
 
 payload = json.dumps({
   "model": "GigaChat-2-Max",
@@ -14,7 +18,7 @@ payload = json.dumps({
     },
     {
       "role": "user",
-      "content": "застройщик Vesper достоинства"
+      "content": builder
     }
   ]
 })
@@ -30,7 +34,7 @@ response = requests.request("POST", url, headers=headers, data=payload, verify=F
 
 print(response.text)
 
-file = open("result", "w")
+file = open("result.json", "w")
 
 # Write text to the file
 file.write(response.text)
