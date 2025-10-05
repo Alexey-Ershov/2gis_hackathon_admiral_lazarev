@@ -83,11 +83,12 @@ func ProcessLiItem(s string, res string) string {
 			is1 = strings.Index(s, "-")
 		}
 		if is2 < 0 {
-			sSmall := s[is1+1:]
-			res = res + "<li>" + sSmall + "</li>"
 			is1 = -1
 		}
 	}
+	sSmall := s[is1+1:]
+	res = res + "<li>" + sSmall + "</li>"
+
 	res = res + "</ul>"
 	return res
 }
