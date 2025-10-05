@@ -26,7 +26,7 @@ sudo -u postgres createdb 2gis_hack
 sudo -u postgres psql -U postgres -d 2gis_hack -f 2gis_hack.sql
 
 ## Run server
-uvicorn main:app --reload
+uvicorn main:app --host 127.0.0.1 --port 8000 --reload
 
 ## curl GET
 curl "http://158.160.1.104:8000/items/"
