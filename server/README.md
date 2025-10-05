@@ -10,17 +10,20 @@ source venv/bin/activate   # Glorious GNU/Darwin
 
 # Dependencies installation
 pip install -r requirements.txt
+```
 
-# Run server
+## Create DB
+createdb 2gis_hack
+
+## Run server
 uvicorn main:app --reload
 
-# Kil server
+## Kill server
 sudo kill $(ps axu | grep uvicorn | awk '{print $2}')
 
-# curl GET
+## curl GET
 curl "http://158.160.1.104:8000/items/"
 curl "http://158.160.1.104:8000/items/<ID>"
-```
 
 ## Docs
 ### Swagger UI
