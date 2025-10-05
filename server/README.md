@@ -12,9 +12,6 @@ source venv/bin/activate   # Glorious GNU/Darwin
 pip install -r requirements.txt
 ```
 
-## Create DB
-createdb 2gis_hack
-
 ## Run server
 uvicorn main:app --reload
 
