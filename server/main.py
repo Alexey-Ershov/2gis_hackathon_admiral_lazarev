@@ -1,7 +1,9 @@
 from fastapi import FastAPI, Depends, HTTPException
+from fastapi.responses import JSONResponse
 from sqlalchemy.orm import Session
 import crud, models, schemas
 from database import engine, get_db
+import json
 
 # Создаем таблицы
 models.Base.metadata.create_all(bind=engine)
@@ -17,7 +19,13 @@ def read_item(item_id: int, db: Session = Depends(get_db)):
     db_item = crud.get_item(db, item_id)
     if db_item is None:
         raise HTTPException(status_code=404, detail="Item not found")
-    return db_item
+
+    try:
+        desc_json = json.loads(db_item.description)
+    except json.JSONDecodeError:
+        desc_json = db_item.description  # fallback, если это не JSON
+
+    return JSONResponse(content={"description": desc_json})
 
 @app.get("/items/", response_model=list[schemas.Item])
 def read_items(skip: int = 0, limit: int = 100, db: Session = Depends(get_db)):

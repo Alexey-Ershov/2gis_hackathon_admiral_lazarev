@@ -1,9 +1,10 @@
 from typing import Optional
+from typing import Any
 
 from pydantic import BaseModel
 
 class ItemBase(BaseModel):
-    description: str
+    description: Any
 
 class ItemCreate(ItemBase):
     pass
