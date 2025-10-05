@@ -1,0 +1,54 @@
+@import "tailwindcss";
+@tailwind utilities;
+
+@font-face {
+    font-family: "SB Sans";
+    src: url("@/shared/assets/fonts/SB Sans/SB Sans Text.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "SB Sans";
+    src: url("@/shared/assets/fonts/SB Sans/SB Sans Text Medium.ttf") format("truetype");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "SB Sans";
+    src: url("@/shared/assets/fonts/SB Sans/SB Sans Text Semibold.ttf") format("truetype");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "SB Sans";
+    src: url("@/shared/assets/fonts/SB Sans/SB Sans Text Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+:root {
+    --main-font: 'Raleway Variable', Raleway, sans-serif;
+    --secondary-font: 'Montserrat Variable', Montserrat, sans-serif;
+    --primary-font: 'SB Sans', sans-serif;
+}
+
+body {
+    font-family: var(--main-font), sans-serif;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+
+.primary-font {
+    font-family: var(--primary-font), sans-serif;
+}
+
+@theme {
+    --color-accent: #FFBA0D;
+}

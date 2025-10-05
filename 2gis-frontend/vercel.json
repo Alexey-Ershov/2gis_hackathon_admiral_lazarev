@@ -1,0 +1,8 @@
+{
+  "functions": {
+    "api/**/*.[jt]s": {
+      "maxDuration": 10,
+      "memory": 1024
+    }
+  }
+}

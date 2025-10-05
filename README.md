@@ -12,3 +12,9 @@ cd loader
 cat README.md
 ```
 
+## Frontend
+```bash
+cd 2gis-frontend
+cat README.md
+```
+
